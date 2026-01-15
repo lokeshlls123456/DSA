@@ -1,14 +1,9 @@
 n = int(input())
-matrix = [list(map(int, input().split())) for _ in range(n)]
-is_upper = True
+primary_sum = 0
+secondary_sum = 0
+
 for i in range(n):
-    for j in range(i):  
-        if matrix[i][j] != 0:
-            is_upper = False
-            break
-    if not is_upper:
-        break
-if is_upper:
-    print("Upper triangular matrix")
-else:
-    print("Not an Upper triangular matrix")
+    row = list(map(int, input().split()))
+    primary_sum += row[i]           
+    secondary_sum += row[n - 1 - i] 
+print(primary_sum, secondary_sum)
