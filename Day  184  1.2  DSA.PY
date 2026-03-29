@@ -7,4 +7,4 @@ elif M == "paper":
 elif M == "scissors":
     print("Rock")
 else:
-    print("Invalid move")
+    print("Invalid move").
