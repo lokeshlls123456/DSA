@@ -1,10 +1,9 @@
-M = input().strip()
+S = int(input())  
+D = int(input()) 
+N = int(input()) 
 
-if M == "rock":
-    print("Paper")
-elif M == "paper":
-    print("Scissors")
-elif M == "scissors":
-    print("Rock")
-else:
-    print("Invalid move")
+remaining = S - D
+
+average = round(remaining / N)
+
+print(average)
